@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Création de Landing Page Premium | Génération de Leads</title>
+<title>Création de Landing Page Premium</title>
 
 <style>
 body{
 margin:0;
 font-family: 'Segoe UI', Arial, sans-serif;
-background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
-color:white;
+background:#f8fafc;
+color:#1e293b;
 }
 
 section{
@@ -18,107 +18,113 @@ padding:80px 20px;
 text-align:center;
 }
 
+.hero{
+background:linear-gradient(135deg,#e0f2fe,#f0f9ff);
+}
+
 .hero h1{
-font-size:48px;
+font-size:42px;
 margin-bottom:20px;
-background: linear-gradient(90deg,#38bdf8,#6366f1);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+color:#0f172a;
 }
 
 .hero p{
 max-width:700px;
 margin:auto;
 font-size:18px;
-opacity:0.9;
 line-height:1.6;
+color:#334155;
 }
 
-.cta-btn{
-background:linear-gradient(90deg,#6366f1,#38bdf8);
-padding:16px 35px;
-border:none;
-border-radius:40px;
-color:white;
-font-weight:bold;
-cursor:pointer;
-margin-top:30px;
-font-size:16px;
-transition:0.3s;
-}
-
-.cta-btn:hover{
-transform:scale(1.05);
+.hero img{
+margin-top:40px;
+width:100%;
+max-width:600px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
 }
 
 .features{
-background:#111827;
+background:white;
 }
 
 .features h2{
-font-size:32px;
-margin-bottom:40px;
+font-size:30px;
+margin-bottom:50px;
 }
 
-.feature-box{
-max-width:900px;
-margin:auto;
+.feature-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
+max-width:1000px;
+margin:auto;
 }
 
 .feature{
-background:#1f2937;
+background:#f1f5f9;
 padding:30px;
 border-radius:20px;
 }
 
+.feature img{
+width:60px;
+margin-bottom:20px;
+}
+
 .form-section{
-background:linear-gradient(135deg,#1e293b,#0f172a);
+background:linear-gradient(135deg,#f0f9ff,#e0f2fe);
 }
 
 .form-box{
 background:white;
-color:#333;
-max-width:450px;
+max-width:500px;
 margin:50px auto;
 padding:40px;
 border-radius:20px;
-box-shadow:0 25px 60px rgba(0,0,0,0.4);
+box-shadow:0 25px 60px rgba(0,0,0,0.1);
 }
 
 .form-box h2{
-text-align:center;
 margin-bottom:20px;
 }
 
-input{
+input, textarea{
 width:100%;
 padding:14px;
 margin:10px 0;
 border-radius:10px;
-border:1px solid #ddd;
+border:1px solid #cbd5e1;
 font-size:15px;
+}
+
+textarea{
+min-height:100px;
+resize:none;
 }
 
 button{
 width:100%;
 padding:15px;
-background:linear-gradient(90deg,#6366f1,#38bdf8);
+background:#0ea5e9;
 color:white;
 border:none;
 border-radius:10px;
 font-weight:bold;
 font-size:16px;
 cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#0284c7;
 }
 
 .success{
 color:green;
-text-align:center;
 margin-top:15px;
 font-weight:bold;
+text-align:center;
 }
 </style>
 
@@ -127,55 +133,62 @@ font-weight:bold;
 
 <!-- HERO -->
 <section class="hero">
-<h1>Landing Pages Premium Qui Transforment Vos Visiteurs en Clients</h1>
+<h1>Des Landing Pages Élégantes Qui Convertissent</h1>
 <p>
-Nous créons des landing pages professionnelles, modernes et optimisées
-pour la conversion. Hébergement rapide sur Vercel, automatisation avec Zapier,
-intégration Meta Ads et tracking avancé pour maximiser vos résultats.
+Nous concevons des landing pages professionnelles adaptées à votre secteur d’activité,
+optimisées pour générer des leads qualifiés. Design moderne, structure stratégique
+et automatisation complète pour maximiser vos résultats.
 </p>
-<button class="cta-btn" onclick="document.getElementById('formulaire').scrollIntoView({behavior:'smooth'})">
-Obtenir ma Landing Page
-</button>
+
+<img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a" alt="Landing page design">
 </section>
 
 <!-- FEATURES -->
 <section class="features">
-<h2>Pourquoi Nous Choisir ?</h2>
-<div class="feature-box">
+<h2>Pourquoi Choisir Notre Service ?</h2>
+
+<div class="feature-container">
+
 <div class="feature">
-<h3>Design Premium</h3>
-<p>Interface moderne, responsive et optimisée UX pour inspirer confiance et maximiser le taux de conversion.</p>
+<img src="https://img.icons8.com/fluency/96/design.png"/>
+<h3>Design Moderne</h3>
+<p>Interface claire, professionnelle et adaptée à votre image de marque.</p>
 </div>
 
 <div class="feature">
+<img src="https://img.icons8.com/fluency/96/combo-chart.png"/>
 <h3>Optimisation Conversion</h3>
-<p>Structure stratégique, call-to-action puissants et psychologie marketing intégrée.</p>
+<p>Structure stratégique pour transformer les visiteurs en prospects qualifiés.</p>
 </div>
 
 <div class="feature">
-<h3>Automatisation Complète</h3>
-<p>Connexion automatique vers Google Sheets, CRM ou WhatsApp via Zapier.</p>
+<img src="https://img.icons8.com/fluency/96/automation.png"/>
+<h3>Automatisation</h3>
+<p>Connexion automatique vers Google Sheets, CRM ou WhatsApp.</p>
 </div>
 
-<div class="feature">
-<h3>Performance Ultra Rapide</h3>
-<p>Hébergement sur Vercel pour une vitesse maximale et un meilleur score publicitaire.</p>
-</div>
 </div>
 </section>
 
 <!-- FORM -->
-<section class="form-section" id="formulaire">
+<section class="form-section">
 <div class="form-box">
-<h2>Demandez Votre Devis Gratuit</h2>
+
+<h2>Demandez Votre Landing Page</h2>
 
 <form id="leadForm">
+
 <input type="text" id="nom" placeholder="Nom complet" required>
 <input type="email" id="email" placeholder="Email professionnel" required>
 <input type="text" id="telephone" placeholder="Téléphone / WhatsApp" required>
 <input type="text" id="pays" placeholder="Pays" required>
 
-<button type="submit">Envoyer</button>
+<input type="text" id="secteur" placeholder="Secteur d'activité" required>
+
+<textarea id="description" placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
+
+<button type="submit">Lancer Mon Projet</button>
+
 </form>
 
 <p class="success" id="message"></p>
@@ -191,7 +204,9 @@ const data = {
 nom: document.getElementById("nom").value,
 email: document.getElementById("email").value,
 telephone: document.getElementById("telephone").value,
-pays: document.getElementById("pays").value
+pays: document.getElementById("pays").value,
+secteur: document.getElementById("secteur").value,
+description: document.getElementById("description").value
 };
 
 try{
@@ -207,7 +222,7 @@ if(response.ok){
 document.getElementById("message").innerText="Votre demande a été envoyée avec succès. Nous vous contacterons rapidement.";
 document.getElementById("leadForm").reset();
 }else{
-document.getElementById("message").innerText="Une erreur est survenue. Veuillez réessayer.";
+document.getElementById("message").innerText="Erreur d'envoi. Veuillez réessayer.";
 }
 
 }catch(error){
